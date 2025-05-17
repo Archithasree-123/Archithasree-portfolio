@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from 'react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -37,10 +38,10 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-portfolio-purple to-portfolio-pink rounded-full mx-auto overflow-hidden shadow-xl">
-                {/* This would be where your profile image would go */}
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">
-                  Profile Image
-                </div>
+                <Avatar className="w-full h-full">
+                  <AvatarImage src="/lovable-uploads/cef4a470-a6cc-46df-8ff9-1e416de81c0b.png" alt="Architha Sree L K" className="w-full h-full object-cover" />
+                  <AvatarFallback className="text-xl">AS</AvatarFallback>
+                </Avatar>
               </div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-portfolio-lightPink rounded-full -z-10"></div>
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-portfolio-lightPurple rounded-full -z-10"></div>
