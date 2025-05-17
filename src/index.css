@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,58 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.portfolio.purple');
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.portfolio.lightPurple');
+}
+
+/* Animated underline effect for links */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: theme('colors.portfolio.purple');
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.animated-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-portfolio-purple to-portfolio-pink bg-clip-text text-transparent;
 }
