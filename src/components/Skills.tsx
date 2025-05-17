@@ -28,19 +28,20 @@ const Skills = () => {
   }, []);
 
   const skills = {
-    languages: ["C", "Python", "Javascript", "HTML", "CSS"],
-    libraries: ["Python Libraries", "ReactJs"],
-    tools: ["Nodejs", "VSCode", "Git", "Github", "Postman", "Codepin"],
+    languages: ["Java", "C", "Javascript", "HTML", "CSS"],
+    libraries: ["ReactJs"],
+    tools: ["VSCode", "Git", "Github", "Postman", "Codepin"],
     databases: ["MongoDB", "Firebase", "Relational Database(mySQL)"],
     softSkills: ["Problem Solving", "Communication", "Presentation", "Adaptability"]
   };
 
   const certifications = [
+    "Salesforce- 2x certified",
+    "Oracle-2x certified",
     "Python for data science- NPTEL",
     "C programming, JavaScript- Udemy",
     "Enterprise Design Thinking Course- IBM",
-    "Salesforce- 2x certified",
-    "Oracle-2x certified"
+    "Introduction to Internet Of Things- NPTEL"   
   ];
 
   const achievements = [
