@@ -7,14 +7,14 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-white via-portfolio-lightPink to-portfolio-lightPurple/20 pt-16"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-white via-portfolio-lightPurple/20 to-portfolio-beige/30 pt-16"
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-portfolio-purple to-portfolio-pink bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-portfolio-purple to-portfolio-lightPurple bg-clip-text text-transparent">
             Architha Sree L K
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8">
+          <p className="text-xl md:text-2xl text-portfolio-darkPurple mb-8">
             Full Stack Developer
           </p>
           <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">

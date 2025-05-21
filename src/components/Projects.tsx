@@ -34,21 +34,21 @@ const Projects = () => {
       title: "Modern Periodic Table Program",
       description: "A program to know about the element in periodic table. Search elements by atomic number and get detailed information.",
       tech: ["C"],
-      link: "https://github.com/yourusername/periodic-table",
+      link: "https://github.com/architha",
       category: "software"
     },
     {
       title: "E-Commerce Website",
       description: "A webpage of ticket booking system styled with contact form and storage database.",
       tech: ["Frontend"],
-      link: "https://github.com/yourusername/ecommerce-website",
+      link: "https://github.com/architha",
       category: "web"
     },
     {
       title: "Event Management Webpage",
       description: "A Simple Fashion store webpage managing events with all necessary details of fashion store.",
       tech: ["CSS", "HTML"],
-      link: "https://github.com/yourusername/event-management",
+      link: "https://github.com/architha",
       category: "web"
     }
   ];
@@ -61,7 +61,7 @@ const Projects = () => {
     <section 
       id="projects" 
       ref={sectionRef}
-      className="py-24 bg-portfolio-yellow/10 opacity-0"
+      className="py-24 bg-portfolio-beige/10 opacity-0"
     >
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold mb-12 text-center">
@@ -81,7 +81,7 @@ const Projects = () => {
               className={`
                 capitalize
                 ${activeFilter === filter 
-                  ? 'bg-portfolio-darkBlue hover:bg-portfolio-darkBlue/90' 
+                  ? 'bg-portfolio-darkPurple hover:bg-portfolio-darkPurple/90' 
                   : 'border-portfolio-purple text-portfolio-purple hover:bg-portfolio-purple/10'
                 }
               `}
@@ -98,7 +98,7 @@ const Projects = () => {
               className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-scale-up bg-white"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="h-48 bg-gradient-to-br from-portfolio-darkBlue to-portfolio-purple flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-br from-portfolio-darkPurple to-portfolio-purple flex items-center justify-center">
                 <span className="text-white text-xl font-bold">{project.title.charAt(0)}</span>
               </div>
               <CardHeader>
@@ -109,8 +109,8 @@ const Projects = () => {
                 <p className="text-gray-700">{project.description}</p>
               </CardContent>
               <CardFooter className="flex justify-end">
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  <Button className="bg-portfolio-darkBlue hover:bg-portfolio-purple">
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-portfolio-darkPurple hover:bg-portfolio-purple">
                     View Project
                   </Button>
                 </a>

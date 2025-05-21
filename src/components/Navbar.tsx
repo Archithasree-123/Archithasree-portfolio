@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,24 +36,24 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0 font-bold text-xl bg-gradient-to-r from-portfolio-purple to-portfolio-pink bg-clip-text text-transparent">
+          <div className="flex-shrink-0 font-bold text-xl bg-gradient-to-r from-portfolio-purple to-portfolio-lightPurple bg-clip-text text-transparent">
             Architha Sree L K
           </div>
           
           {/* Desktop nav */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <Link
+              <ScrollLink
                 key={item.name}
                 to={item.to}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="text-gray-800 hover:text-portfolio-purple cursor-pointer transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-portfolio-purple after:transition-all"
+                className="text-portfolio-darkPurple hover:text-portfolio-purple cursor-pointer transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-portfolio-purple after:transition-all"
               >
                 {item.name}
-              </Link>
+              </ScrollLink>
             ))}
           </nav>
 
@@ -60,7 +61,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-portfolio-purple focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-portfolio-darkPurple hover:text-portfolio-purple focus:outline-none"
             >
               <svg 
                 className="h-6 w-6" 
@@ -85,7 +86,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-md p-4">
           <div className="flex flex-col space-y-4">
             {navItems.map((item) => (
-              <Link
+              <ScrollLink
                 key={item.name}
                 to={item.to}
                 spy={true}
@@ -93,10 +94,10 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-800 hover:text-portfolio-purple cursor-pointer transition-colors px-2 py-1"
+                className="text-portfolio-darkPurple hover:text-portfolio-purple cursor-pointer transition-colors px-2 py-1"
               >
                 {item.name}
-              </Link>
+              </ScrollLink>
             ))}
           </div>
         </div>
