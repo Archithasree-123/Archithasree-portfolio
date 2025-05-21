@@ -151,5 +151,5 @@
 
 /* Gradient text */
 .gradient-text {
-  @apply bg-gradient-to-r from-portfolio-purple to-portfolio-pink bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-portfolio-darkBlue to-portfolio-purple bg-clip-text text-transparent;
 }

@@ -52,10 +52,10 @@ export default {
           foreground: "var(--sidebar-foreground)",
         },
         portfolio: {
-          purple: "#7F55B1",
-          lightPurple: "#9B7EBD",
-          pink: "#F49BAB",
-          lightPink: "#FFE1E0",
+          darkBlue: "#0E2148",
+          purple: "#483AA0",
+          lightPurple: "#7965C1",
+          yellow: "#E3D095",
         },
       },
       borderRadius: {

@@ -61,14 +61,14 @@ const Skills = () => {
         <h2 className="text-3xl font-bold mb-12 text-center">
           <span className="relative inline-block">
             Skills & Certifications
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-portfolio-pink transform origin-left"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-portfolio-purple transform origin-left"></span>
           </span>
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Technical Skills */}
           <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100">
-            <h3 className="text-xl font-bold mb-6 text-portfolio-purple">Technical Skills</h3>
+            <h3 className="text-xl font-bold mb-6 text-portfolio-darkBlue">Technical Skills</h3>
             
             <div className="space-y-8">
               {Object.entries(skills).map(([category, skillList], index) => (
@@ -78,7 +78,7 @@ const Skills = () => {
                     {skillList.map((skill, i) => (
                       <span 
                         key={i} 
-                        className="bg-portfolio-lightPurple/20 text-portfolio-purple px-3 py-1 rounded-full text-sm"
+                        className="bg-portfolio-purple/20 text-portfolio-darkBlue px-3 py-1 rounded-full text-sm"
                       >
                         {skill}
                       </span>
@@ -92,11 +92,11 @@ const Skills = () => {
           {/* Certifications & Achievements */}
           <div className="flex flex-col gap-10">
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 animate-fade-left" style={{ animationDelay: `0.2s` }}>
-              <h3 className="text-xl font-bold mb-6 text-portfolio-purple">Certifications</h3>
+              <h3 className="text-xl font-bold mb-6 text-portfolio-darkBlue">Certifications</h3>
               <ul className="space-y-3">
                 {certifications.map((cert, index) => (
                   <li key={index} className="flex items-start">
-                    <div className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-portfolio-pink mr-3"></div>
+                    <div className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-portfolio-lightPurple mr-3"></div>
                     <span className="text-gray-700">{cert}</span>
                   </li>
                 ))}
@@ -104,11 +104,11 @@ const Skills = () => {
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 animate-fade-left" style={{ animationDelay: `0.4s` }}>
-              <h3 className="text-xl font-bold mb-6 text-portfolio-purple">Achievements</h3>
+              <h3 className="text-xl font-bold mb-6 text-portfolio-darkBlue">Achievements</h3>
               <ul className="space-y-3">
                 {achievements.map((achievement, index) => (
                   <li key={index} className="flex items-start">
-                    <div className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-portfolio-pink mr-3"></div>
+                    <div className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-portfolio-lightPurple mr-3"></div>
                     <span className="text-gray-700">{achievement}</span>
                   </li>
                 ))}
